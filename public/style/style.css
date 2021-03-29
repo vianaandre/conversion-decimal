@@ -1,0 +1,148 @@
+:root {
+    --color-primary: #121214;
+    --color-secudanry: #29292E;
+    --color-background: #F1F1F1;
+    --color-font-text: #F1F1F1
+}
+* {
+    box-sizing: border-box;
+}
+
+/* RESET EDITADO*/
+html {
+    line-height: 1.15; 
+    -webkit-text-size-adjust: 100%;
+  }
+html, body, div, span, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, a, em, img, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, footer, header, nav, section, main {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+a {
+	text-decoration: none;
+    background-color: transparent;
+}
+button,
+input {
+  overflow: visible;
+}
+
+/* HEADER */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.header {
+    width: 100vw;
+    height: 36vh;
+    min-height: 200px;
+    background-color: var(--color-primary);
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+.header .content-header {
+    display: flex;
+    margin-top: 8vh;
+}
+.header .content-header h1 {
+    font-size: 30px;
+    color: var(--color-font-text);
+    font-family: Roboto, sans-serif;   
+    margin-right: 10px; 
+}
+
+/* FORM */
+.form {
+    position: absolute;
+    top: 20vh;
+    width: 35vw;
+    min-width: 280px;
+    max-width: 500px;
+    background-color: var(--color-secudanry);
+    padding: 20px 30px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.form h2 {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.06rem;
+    color: var(--color-font-text);
+}
+.form h2::before {
+    content: "";
+    display: block;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    width: 3px;
+    background-color: var(--color-font-text);
+    margin-right: 5px;
+}
+.form .form-input .content-input, .form .form-output div {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background-color: var(--color-primary);
+    padding: 10px 0px;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+.form .form-output div {
+    margin-bottom: 20px;
+}
+.form .form-input .content-input input, .form .form-output div input {
+    width: 100%;
+    margin-right: 20px;
+    padding: 5px 0;
+    margin-left: 20px;
+    background-color: transparent;
+    border: none;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    color: var(--color-font-text);
+}
+.form .form-input .content-input input:focus, .form .form-output div input {
+    outline: none;
+    box-shadow: none;
+}
+.form button {
+    background-color: var(--color-primary);
+    padding: 15px 25px;
+    font-size: 18px;
+    color: var(--color-font-text);
+    border-radius: 5px;
+    width: 15vw;
+    min-width: 200px;
+    max-width: 400px;
+    border: none;
+    margin: auto;
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    letter-spacing: 0.08rem;
+}
+.rodape {
+    position: absolute;
+    bottom: 0px;
+}
+.rodape a {
+    padding: 15px 0;
+    display: flex;
+    align-items: center;
+}
+.rodape a p {
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    margin-left: 10px;
+    color: var(--color-primary);
+}

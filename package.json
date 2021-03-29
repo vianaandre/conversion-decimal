@@ -1,0 +1,17 @@
+{
+  "name": "conversor_decimal",
+  "version": "1.0.0",
+  "description": "Conversor de decimal para binário!!!",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "nodemon ."
+  },
+  "author": "André Gustavo Viana",
+  "license": "ISC",
+  "dependencies": {
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "2.0.7"
+  }
+}
