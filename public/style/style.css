@@ -35,8 +35,9 @@ body {
     align-items: center;
 }
 .header {
+    position: absolute;
     width: 100vw;
-    height: 36vh;
+    height: 40px;
     min-height: 200px;
     background-color: var(--color-primary);
     margin: 0;
@@ -45,7 +46,7 @@ body {
 }
 .header .content-header {
     display: flex;
-    margin-top: 8vh;
+    margin-top: 50px;
 }
 .header .content-header h1 {
     font-size: 30px;
@@ -56,11 +57,11 @@ body {
 
 /* FORM */
 .form {
-    position: absolute;
-    top: 20vh;
-    width: 35vw;
-    min-width: 280px;
-    max-width: 500px;
+    position: relative;
+    margin-top: 130px;
+    width: 60vw;
+    min-width: 300px;
+    max-width: 450px;
     background-color: var(--color-secudanry);
     padding: 20px 30px;
     border-radius: 5px;
@@ -132,11 +133,11 @@ body {
     letter-spacing: 0.08rem;
 }
 .rodape {
-    position: absolute;
-    bottom: 0px;
+    position: relative;
+    margin-top: 0px;
 }
 .rodape a {
-    padding: 15px 0;
+    padding: 10px 0;
     display: flex;
     align-items: center;
 }

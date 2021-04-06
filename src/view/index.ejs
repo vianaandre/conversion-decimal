@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style/style.css">
     <title>Dev.Convertion</title>
+
+    <script src="/scripts/script.js" defer type="module"></script>
 </head>
 
 <body>
@@ -25,9 +27,9 @@
     <div class="form">
         <div class="form-input">
             <h2>Entrada</h2>
-            <div class="content-input">
+            <div class="content-input" id="componenteInput">
                 <img src="/img/icn-entrada.svg" alt="Ícone de Entrada" title="Ícone de Entrada">
-                <input type="text" name="" id="" placeholder="Number">
+                <input type="text" name="" id="inputDecimal" placeholder="Number">
             </div>
         </div>
 
@@ -35,18 +37,18 @@
             <h2>Saída</h2>
             <div>
                 <img src="/img/icn-saida.svg" alt="Ícone de Saída" title="Ícone de Saída">
-                <input type="text" placeholder="Binário" readonly>
+                <input type="text" placeholder="Binário" id="outputBinario" readonly>
             </div>
             <div>
                 <img src="/img/icn-saida.svg" alt="Ícone de Saída" title="Ícone de Saída">
-                <input type="text" placeholder="Octal" readonly>
+                <input type="text" placeholder="Octal" id="outputOctal" readonly>
             </div>
             <div>
                 <img src="/img/icn-saida.svg" alt="Ícone de Saída" title="Ícone de Saída">
-                <input type="text" placeholder="Hexadecimal" readonly>
+                <input type="text" placeholder="Hexadecimal" id="outputHexadecimal" readonly>
             </div>
         </div>
-        <button>Converter</button>
+        <button id="buttonConverte">Converter</button>
     </div>
 
     <footer class="rodape">
@@ -57,7 +59,6 @@
             </p>
         </a>
     </footer>
-    <script src="script.js"></script>
 
 </body>
 </html>
