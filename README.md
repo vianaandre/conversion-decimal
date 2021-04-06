@@ -10,11 +10,14 @@
 
 ✅ Converter de decimal para hexadecimal
     - Já para converter de decimal para hexadecimal basta dividir por 16 e fazer o mesmo esquema de conversão de decimal para octal
-        
-__Observações__
-- para podermos pegar um string e convertê-la de maneira que ela fique de trás para frente precisamos utilizar o conjunto de atributos <br/>
-**split()** - transforma em um vetor <br/>
-**reverse()** - reverte o vetor <br/>
-**join()** - junto os indices como se fosse uma string 
 
-- foi utilizado apenas estruturas de controle e repetição, além de atributos específicos para vetores e strings
+✅ Implementar as validações
+    - Implementar oque deve ser feito caso o número de entrada não seja validado, isso deve gerar algum efeito de erro 
+        
+>Esse projeto tem como base converter os números decimais em binário, octal e hexadecimal. Ele está sendo construindo >para eu poder colocar a ferramente EJS que aprendi em prática, além de fortalecer meus conhecimentos em HTML, CSS e JS.
+>Conforme vai o andamento das push, vou adicionando novas funcionalidades, minha ideia no final é poder converter as 
+>outras bases também. 
+
+</hr>
+
+<h2 text-align="center">André Gustavo Viana</h2>
