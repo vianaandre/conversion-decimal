@@ -1,11 +1,23 @@
-import form from './modal.js'
+// importações
+import binary from './services/decimal/Binary.js'
+import octal from './services/decimal/Octal.js' 
+import hexadecimal from './services/decimal/Hexadecimal.js'
 
-const modal = new form()
+// instanciamento 
+const Binario = new binary()
+const Octal = new octal()
+const Hexadecimal = new hexadecimal()
 
-// chamando a função de validation para um evento
-document.getElementById('buttonConverte').addEventListener('click', modal.validacao)
+// pegando elemento
+const buttonAction = document.getElementById('buttonConverte')
 
-// chamando a função de erro para o erro de um input
-document.getElementById('inputDecimal').addEventListener('focus', modal.erro)
+// prevenindo o eveto de submit do form
+buttonAction.addEventListener('click', (e) => {
+    e.preventDefault()
+})
+// mandado ouvir os eventos para as transformações de decimais
+buttonAction.addEventListener('click', Binario.exitBinary)
+buttonAction.addEventListener('click', Octal.exitOctal)
+buttonAction.addEventListener('click', Hexadecimal.exitHexadecimal)
 
-console.log('pegando..')
+

@@ -1,6 +1,8 @@
 :root {
     --color-primary: #121214;
     --color-secudanry: #29292E;
+    --color-tertiary: #222226
+    --color-quaternary: #000
     --color-background: #F1F1F1;
     --color-font-text: #F1F1F1
 }
@@ -87,19 +89,38 @@ body {
     background-color: var(--color-font-text);
     margin-right: 5px;
 }
-.form .form-input .content-input, .form .form-output div {
+.form .form-input {
+    position: relative;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.form .form-input .content-input, .form .form-output .content-output {
+    position: relative;
     display: flex;
     align-items: center;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    background-color: var(--color-primary);
-    padding: 10px 0px;
-    padding-left: 20px;
-    border-radius: 5px;
-}
-.form .form-output div {
+    margin-top: 15px;
     margin-bottom: 20px;
+    width: 100%;
 }
+.form .form-input .content-input .input, .form .form-output .input {
+    background-color: var(--color-primary);
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 0px 5px 5px 0px;
+}
+.form .form-input .content-input .base, .form .form-output .base{
+    font-size: 24px;
+    padding: 15px 0;
+    width: 70px;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #fff;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    background-color: #222226;
+}
+
 .form .form-input .content-input input, .form .form-output div input {
     width: 100%;
     margin-right: 20px;
@@ -115,7 +136,7 @@ body {
     outline: none;
     box-shadow: none;
 }
-.form button {
+.form .button-action-converte {
     background-color: var(--color-primary);
     padding: 15px 25px;
     font-size: 18px;
@@ -132,6 +153,27 @@ body {
     font-weight: bold;
     letter-spacing: 0.08rem;
 }
+.form .form-buttons .button-bases {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.form .form-buttons .button-bases a {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+    font-size: 18px;
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    background-color: #222226;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .rodape {
     position: relative;
     margin-top: 0px;
@@ -146,4 +188,7 @@ body {
     font-family: Roboto, sans-serif;
     margin-left: 10px;
     color: var(--color-primary);
+}
+.form .form-input .erro {
+    border: red solid 2px;
 }

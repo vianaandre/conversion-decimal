@@ -8,5 +8,6 @@
         "node_modules": true,
         "package.json": false,
         "package-lock.json": true,
+        ".gitignore": false,
     }
 }
