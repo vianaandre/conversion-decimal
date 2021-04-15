@@ -1,10 +1,13 @@
 # Hello 👋👋 - Seja bem vindo
-## Conversor de Números decimais para binário, octal e Hexadecimal
+## Projeto que converte bases Númericas
 
->Esse projeto tem como base converter os números decimais em binário, octal e hexadecimal. Ele está sendo construindo >para eu poder colocar a ferramente EJS que aprendi em >prática, além de fortalecer meus conhecimentos em HTML, CSS e JS.
->Conforme vai o andamento das push, vou adicionando novas funcionalidades, minha ideia no final é poder converter as 
->outras bases também. 
+<h4>
+    Esse projeto tem como ideal converter os números de determinadas bases numéricas para outras bases numéricos. As bases que seram utilizadas são a 2 (binária), 10 (decimal),     8 (octal) e a 16 (hexadecimal). Caso queira contribuir fique a vontade. 
+</h4>
 
+<hr />
+
+## Parte Lógica
 
 ### 1 Parte - Entender a Lógica por trás para a conversão utilizando Javascript 😁
 ✅ Converter de decimal para binário
