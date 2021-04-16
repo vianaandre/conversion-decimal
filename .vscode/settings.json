@@ -9,5 +9,7 @@
         "package.json": false,
         "package-lock.json": true,
         ".gitignore": false,
+        "public/img": false,
+        "public/style": false,
     }
 }

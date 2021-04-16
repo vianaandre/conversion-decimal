@@ -1,0 +1,52 @@
+<form class="form" id='form'>
+    <div class="form-buttons">
+        <h2>Bases</h2>
+        <div class="button-bases">
+            <a href="/" id="button-decimal" class="buttonCorDecimal">10</a>
+            <a href="/:2" id="button-binario" class="buttonCorBinario ativo">2</a>
+            <a href="/:8" id="button-octal" class="buttonCorOctal">8</a>
+            <a href="/:16" id="button-hexadecimal" class="buttonCorHexadecimal">16</a>
+        </div>
+    </div>
+
+    <!--abre entrada-->
+    <div class="form-input">
+        <h2>Entrada</h2>
+        <div class="content-input">
+            <div class="base">2</div>
+            <div class="input">
+                <input type="text" id="inputBinary" placeholder="Number Binário" pattern='[0-1]+$' required>
+            </div>
+        </div>
+    </div>
+    <!--fecha entrada-->
+
+    <!--abre saida-->
+    <div class="form-output">
+        <h2>Saídas</h2>
+        <div class="content-output">
+            <div class="base">10</div>
+            <div class="input">
+                <input type="text" placeholder="Binário" id="outputDecimal" readonly>
+            </div>
+        </div>
+        <div class="content-output">
+            <div class="base">8</div>
+            <div class="input">
+                <input type="text" placeholder="Octal" id="outputOctal" readonly>
+            </div>
+        </div>
+        <div class="content-output">
+            <div class="base">16</div>
+            <div class="input">
+                <input type="text" placeholder="Hexadecimal" id="outputHexadecimal" readonly>
+            </div>
+        </div>
+    </div>
+    <!--fecha saida-->
+
+    <!--abre button-->
+    <button id="buttonConverte" class="button-action-converte">Converter</button>
+    <!--fecha button-->
+</form>
+<script src="/scripts/binary/script.js" type="module"></script>

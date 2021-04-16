@@ -2,6 +2,15 @@
 <html lang="pt-BR">
 
 <head>
+    <title>Dev.Convertion</title>
+    <meta name="author" content="André Viana">
+    <meta name="description" content="Uma página web que converte números de outras bases para as bases solicitadas">
+    <meta name="keywords" content="convertion, bases, site">
+    <meta http-equiv="content-language" content="pt-br">
+    <meta http-equiv="content-type" content="form/html; charset=iso-8859-1">
+    <meta name="og:title" property="og:title" content="Página de conversão de bases númericas">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Converta números de base decimal para outras bases com apenas um clique!">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,72 +18,30 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/style/style.css">
-    <title>Dev.Convertion</title>
-
-    <script src="/scripts/script.js" defer type="module"></script>
+    <link rel="shortcut icon" href="/img/icn-title.svg" />
 </head>
 
 <body>
     <div class="header">
         <div class="content-header">
-            <h1>dev.convertion</h1>
+            <h1>Dev.convertion</h1>
             <div>
                 <img src="/img/icn-title.svg" alt="Ícone Cabeçalho" title="Ícone Cabeçalho">
             </div>
         </div>
     </div>
 
-    <form class="form">
-        <div class="form-buttons">
-            <h2>Bases</h2>
-            <div class="button-bases">
-                <a href="/" id="button-decimal" class="buttonCorDecimal <%=  %> ">10</a>
-                <a href="2" id="button-binario" class="buttonCorBinario">2</a>
-                <a href="8" id="button-octal" class="buttonCorOctal">8</a>
-                <a href="16" id="button-hexadecimal" class="buttonCorHexadecimal">16</a>
-            </div>
-        </div>
-
-        <!--abre entrada-->
-        <div class="form-input">
-            <h2>Entrada</h2>
-            <div class="content-input">
-                <div class="base"><%= dados.inputBase %> </div>
-                <div class="input" id="componenteInput">
-                    <input type="text" id="<%= dados.idInput %>" placeholder="Number" required>
-                </div>
-            </div>
-        </div>
-        <!--fecha entrada-->
-
-        <!--abre saida-->
-        <div class="form-output">
-            <h2>Saída</h2>
-            <div class="content-output">
-                <div class="base"><%= dados.outputBases.Base1 %> </div>
-                <div class="input">
-                    <input type="text" placeholder="Binário" id="<%= dados.outputId.Id1 %>" readonly>
-                </div>
-            </div>
-            <div class="content-output">
-                <div class="base"><%= dados.outputBases.Base2 %> </div>
-                <div class="input">
-                <input type="text" placeholder="Octal" id="<%= dados.outputId.Id2 %>" readonly>
-                </div>
-            </div>
-            <div class="content-output">
-                <div class="base"><%= dados.outputBases.Base3 %> </div>
-                <div class="input">
-                <input type="text" placeholder="Hexadecimal" id="<%= dados.outputId.Id3 %>" readonly>
-                </div>
-            </div>
-        </div>
-        <!--fecha saida-->
-
-        <!--abre button-->
-        <button id="buttonConverte" class="button-action-converte">Converter</button>
-        <!--fecha button-->
-    </form>
+    <!--abre estrutura de controle para form-->
+    <% if(url == '/') { %> 
+        <%- include('parts/formDecimal') %> 
+    <% } else if(url == ':2') { %> 
+        <%- include('parts/formBinary') %> 
+    <% } else if(url == ':8') { %> 
+        <%- include('parts/formOctal') %> 
+    <% } else if(url == ':16') { %>
+        <%- include('parts/formHexadecimal') %>
+    <% } %>   
+    <!--fecha estrutura de controle para form-->
 
     <footer class="rodape">
         <a href="https://github.com/vianaandre" target="_blank">
