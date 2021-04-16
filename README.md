@@ -1,12 +1,15 @@
 # Hello 👋👋 - Seja bem vindo
-## Conversor de Números decimais para binário, octal e Hexadecimal
+## Projeto que converte bases Númericas
 
->Esse projeto tem como base converter os números decimais em binário, octal e hexadecimal. Ele está sendo construindo >para eu poder colocar a ferramente EJS que aprendi em >prática, além de fortalecer meus conhecimentos em HTML, CSS e JS.
->Conforme vai o andamento das push, vou adicionando novas funcionalidades, minha ideia no final é poder converter as 
->outras bases também. 
+<h4>
+    Esse projeto tem como ideal converter os números de determinadas bases numéricas para outras bases numéricos. As bases que seram utilizadas são a 2 (binária), 10 (decimal),     8 (octal) e a 16 (hexadecimal). Caso queira contribuir fique a vontade. 
+</h4>
 
+<hr />
 
-### 1 Parte - Entender a Lógica por trás para a conversão utilizando Javascript 👨‍💻
+## Parte Lógica
+
+### 1 Parte - Entender a Lógica por trás para a conversão utilizando Javascript 😁
 ✅ Converter de decimal para binário
 > para converter para binário preciso ir dividindo por 2 e pegando as sobras e assim implementando uma condição para caso aja sobras e caso não  
 
@@ -18,13 +21,13 @@
 
 <hr />
     
-### 2 Parte - Construir a página 🛠
+### 2 Parte - Construir a página 😉
 ✅ Implementar o design criado
  > O design da aplicação teve como base as cores dos formulários da Rocketseat, e as fontes foram decididas por mim mesmo. Já a estrutura, as formas, tudo teve como refência a      aplicação da Maratona Discover feita pelo Mayk Brito
 
 <hr />
 
-### 3 Parte - Construir as validações do formulário com JS
+### 3 Parte - Construir as validações do formulário com JS ☺
 ✅ Utilizando o export default
  > Implementar as validação e o efeito de erro em apenas um arquivo, onde a função construtura que contém essas duas funções irá ser exportada com o comando de export default       para ser utilizado em um arquivo específico chamado de script, onde esse arquivo vai chamar os eventos passando as funções. 
      
@@ -34,6 +37,22 @@
 ✅ Implementar o efeito de focus
 > Implementar oque deve ser feito depois que o erro houver, onde o usuário deve clicar novamente no campo de input e assim os efeito implementado pelo erro será retirado
         
+<hr />
+
+### 4 Parte - Convertendo decimais para binario, octal e hexadecimal 🙂
+✅ Implementando a conversão para binario
+> Implementei a logica utilizano uma estrutura whille, onde a divisão por dois ocorrera até que se chegue no zero, dentro do whille foi feito uma estrutura de repetição onde para valores que derem igual a 0, será acrescentando a uma variável acumuladora o valor de 0, e para valores que derem maior que zero será acrescentando 1 a essa variével. Ja para inverter peguei a veriável acumludora e utilize i de comandos como split, reverse e join. 
+
+✅ Implementando a conversão para octal
+> A logica para esse é o mesmo porém seguindo uma estrura de controle dentro do whille um pouco diferente, onde para valores maiores que 0, será utilizado uma logica que pega e o valor da divisão anterior e faz a subritação pelo valor da divisão arrendondado para baixo multiplicado por 8. E a se utiliza da mesma logica para a inversão. 
+
+✅ Implementando a conversão para hexadecimal
+> Já aqui a logica segue a mesma de divisão, porém nos valores em que a divisão der maior que zero será aplicado a mesma logica do octal, porém a multiplicação será feita por 16, e os valores que deram o resultado maior que 9, será chamado uma função que tem um switch que define as trocas de valores numericos por Letras. 
+
+### 5 Parte - Implementando os outros tipos de conversão 🤔
+✅ Implementando os buttons
+> Aqui foi utilizado rotas para definir valores para os inputs e outputs, para quando eu fizer a logica de conversão esses valores serem unicos de cada url.
+
 <hr />
 
 <h2 align="center">André Gustavo Viana</h2>
