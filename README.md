@@ -5,7 +5,7 @@
 
 <p align="center">
 Site criado com o intuito de converter bases numéricas, onde as bases usadas são 10, 2, 8 16. Ele foi desenvolvido com o intuito de colcoar meus conhecimentos de EJS e javascript
-em prática> Caso queira contribuir ficaa a vontade, adoraria acrescentar mais funcionalidades nele
+em prática Caso queira contribuir ficaa a vontade, adoraria acrescentar mais funcionalidades nele
 </p>
 
 <hr />
