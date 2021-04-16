@@ -4,7 +4,7 @@
   "description": "Conversor de decimal para binário!!!",
   "main": "src/server.js",
   "scripts": {
-    "start": "nodemon ."
+    "start": "node src/server.js"
   },
   "author": "André Gustavo Viana",
   "license": "ISC",
