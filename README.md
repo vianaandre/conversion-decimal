@@ -4,8 +4,7 @@
 <h1 align="center">Dev.convertion</h1>
 
 <p align="center">
-Site criado com o intuito de converter bases numéricas, onde as bases usadas são 10, 2, 8 16. Ele foi desenvolvido com o intuito de colcoar meus conhecimentos de EJS e javascript
-em prática Caso queira contribuir ficaa a vontade, adoraria acrescentar mais funcionalidades nele
+O site foi desenvolvido para converter diferentes bases numéricas, as bases utilizadas foram a decimal, binária, octal e hexadecimal. E caso queira contribuir, fique a vontade, adoraria implementar novas funcionalidade nele 😁
 </p>
 
 <hr />
