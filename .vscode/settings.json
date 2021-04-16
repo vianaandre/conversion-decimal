@@ -7,7 +7,7 @@
         "**/.DS_Store": true,
         "node_modules": true,
         "package.json": false,
-        "package-lock.json": true,
+        "package-lock.json": false,
         ".gitignore": false,
         "public/img": false,
         "public/style": false,
