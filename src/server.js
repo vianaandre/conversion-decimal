@@ -15,6 +15,7 @@ app.set('views', path.join(__dirname, 'views'))
 
 app.use(routes)
 
-app.listen(2001, () => {
-    console.log('Rodando...')
+var porta = process.env.PORT || 8080;
+app.listen(porta, () => {
+    console.log('Rodando...' + porta)
 })
