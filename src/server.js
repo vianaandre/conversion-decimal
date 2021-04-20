@@ -11,7 +11,7 @@ app.use(express.static('public'))
 
 app.set(express.urlencoded({ extend: true }))
 
-app.use(favicon(__dirname + '/public/favicon.ico'))
+app.use(favicon(__dirname + '/public/favicon.svg'))
 
 // falando sobre o caminho absoluto 
 app.set('views', path.join(__dirname, 'views'))
