@@ -1,5 +1,4 @@
 const express = require('express');
-var favicon = require('express-favicon')
 var path = require('path');
 const routes = require('./routes');
 
@@ -10,8 +9,6 @@ app.set('view engine', 'ejs')
 app.use(express.static('public'))
 
 app.set(express.urlencoded({ extend: true }))
-
-app.use(favicon(__dirname + '/public/favicon.svg'))
 
 // falando sobre o caminho absoluto 
 app.set('views', path.join(__dirname, 'views'))
