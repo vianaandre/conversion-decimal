@@ -1,7 +1,9 @@
 const express = require('express');
-const app = express();
-const path = require('path');
+var favicon = require('express-favicon')
+var path = require('path');
 const routes = require('./routes');
+
+const app = express();
 
 app.set('view engine', 'ejs')
 
@@ -9,6 +11,7 @@ app.use(express.static('public'))
 
 app.set(express.urlencoded({ extend: true }))
 
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')))
 
 // falando sobre o caminho absoluto 
 app.set('views', path.join(__dirname, 'views'))
