@@ -1,5 +1,4 @@
 var express = require('express');
-var favicon = require('serve-favicon')
 var path = require('path');
 var routes = require('./routes');
 
@@ -11,7 +10,6 @@ app.use(express.static('public'))
 
 app.set(express.urlencoded({ extend: true }))
 
-app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 // falando sobre o caminho absoluto 
 app.set('views', path.join(__dirname, 'views'))
 
