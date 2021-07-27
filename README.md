@@ -1,5 +1,5 @@
 <p align="center">
-<a href="https://afternoon-scrubland-06658.herokuapp.com/">
+<a href="https://dev-convertion.herokuapp.com/">
    <img src="/public/assets/icn-title.svg" width="100">
 </a>
 </p>
@@ -52,7 +52,7 @@ O site foi desenvolvido para converter diferentes bases numéricas, as bases uti
 <hr />
 
 <p align="center">
-   O site já está no ar, o deploy foi feito utilizando o git juntamenta com a heroku e a url para ter acesso é <br/> https://afternoon-scrubland-06658.herokuapp.com/ <br/> <br/>
+   O site já está no ar, o deploy foi feito utilizando o git juntamenta com a heroku e a url para ter acesso é <br/> https://dev-convertion.herokuapp.com/ <br/> <br/>
   <a href="https://dashboard.heroku.com/apps"> <img src="https://www.herokucdn.com/deploy/button.png"/> </a>
 </p>
 
